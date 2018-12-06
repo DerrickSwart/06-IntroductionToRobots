@@ -2,8 +2,8 @@
 An opportunity to explore how to make an EV3 Robot move.
 
 Authors: Dave Fisher, David Mutchler, Vibha Alangar,
-their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+their colleagues, and Derrick Swart (working with Josh Giambatista).
+"""  # DOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # -----------------------------------------------------------------------------
 # TODO: 2.
@@ -35,6 +35,9 @@ def go_two_seconds():
     time.sleep(2)
     left_motor.brake()
 
+    left_motor.start()
+    time.sleep(4)
+    left_motor.brake()
 
 def run_test_go_inches():
     """ Tests the go_inches function. """
