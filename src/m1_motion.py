@@ -6,7 +6,7 @@ their colleagues, and Derrick Swart (working with Josh Giambatista).
 """  # DOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # -----------------------------------------------------------------------------
-# TODO: 2.
+# Done: 2.
 #   Follow along with the lecture to run this program:
 #    - Using SSH from your computer
 #   When you have successfully run this program, change this _TODO_ to DONE.
@@ -45,6 +45,7 @@ def run_test_go_inches():
     #   with various inches and speeds.
 
 
+
 def go_inches(inches, percent_of_max_speed):
     """
     Makes the EV3 Robot move the given number of inches at the given speed.
@@ -53,6 +54,9 @@ def go_inches(inches, percent_of_max_speed):
       :type percent_of_max_speed: float  -100 to 100
     """
     # TODO: 5.  Implement and test this function.
-
-
+    left_motor = rb.LargeMotor(rb.Plug("B"))
+    right_motor = rb.LargeMotor(rb.Plug('c'))
+    left_motor.start(percent_of_max_speed)
+    right_motor.start(percent_of_max_speed)
+    time.
 main()
